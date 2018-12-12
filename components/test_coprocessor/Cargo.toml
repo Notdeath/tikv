@@ -5,13 +5,14 @@ publish = false
 
 [dependencies]
 tikv = { path = "../../" }
-protobuf = "~2.0"
+protobuf = "~2.1"
 test_storage = { path = "../test_storage" }
 futures = "0.1"
 
 [dependencies.kvproto]
 git = "https://github.com/pingcap/kvproto.git"
-branch = "super-batch-streaming-old-grpc"
+branch = "experiment"
 
 [dependencies.tipb]
 git = "https://github.com/pingcap/tipb.git"
+branch = "experiment"

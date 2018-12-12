@@ -5,7 +5,7 @@ publish = false
 
 [dependencies]
 tikv = { path = "../../" }
-protobuf = "~2.0"
+protobuf = "~2.1"
 tempdir = "0.3"
 raft = "0.4"
 futures = "0.1"
@@ -17,12 +17,11 @@ tokio = "0.1.8"
 
 [dependencies.kvproto]
 git = "https://github.com/pingcap/kvproto.git"
-branch = "super-batch-streaming-old-grpc"
+branch = "experiment"
 
 [dependencies.rocksdb]
 git = "https://github.com/pingcap/rust-rocksdb.git"
 
 [dependencies.grpcio]
-git = "https://github.com/hicqu/grpc-rs.git"
-branch = "v0.4-grpc-1.6"
+version = "0.4"
 features = ["secure"]
